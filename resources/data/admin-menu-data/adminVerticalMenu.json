@@ -15,25 +15,6 @@
             "name": "User",
             "icon": "user",
             "slug": "admin-user-view"
-        },
-        {
-            "name": "Settings",
-            "icon": "grid",
-            "slug": "",
-            "submenu": [
-                {
-                    "url": "admin/settings/third/party/provider",
-                    "name": "Third party provider",
-                    "icon": "circle",
-                    "slug": "third-party-provider-view"
-                },
-                {
-                    "url": "admin/settings",
-                    "name": "Default Limit",
-                    "icon": "settings",
-                    "slug": "admin-setting"
-                }
-            ]
         }
     ]
 }

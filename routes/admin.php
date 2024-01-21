@@ -78,23 +78,6 @@ Route::group(['middleware' => ['admin']], function () {
         Route::post('/image/update', [AdminProfileController::class, 'imageUploadForm'])->name('admin-profile-image-update');
     });
     /* Route Dashboards */
-
-
-    /* Route Setting */
-    Route::group(['prefix' => 'settings'], function () {
-
-        Route::get('/', [DefaultLimitSettingController::class, 'settingView'])->name('admin-setting');
-        Route::post('default/limit/data/update', [DefaultLimitSettingController::class, 'defaultLimitSettingCreateOrUpdate'])->name('default-limit-data-update');
-        Route::get('get/default/limit/data', [DefaultLimitSettingController::class, 'getDefaultLimitData'])->name('get-default-limit-data');
-
-        /* Route Third party provider */
-        Route::get('third/party/provider', [GatewayProviderSettingController::class, 'thirdPartyProviderView'])->name('third-party-provider-view');
-        Route::post('set/gateway/provider/data', [GatewayProviderSettingController::class, 'gatewayProviderDataCreateOrUpdate'])->name('set-gateway-provider-data');
-        Route::delete('gateway/provider/data/delete', [GatewayProviderSettingController::class, 'gatewayProviderDataDelete'])->name('gateway-provider-data-delete');
-        Route::post('gateway/provider/status/change', [GatewayProviderSettingController::class, 'gatewayProviderChangeStatus'])->name('gateway-provider-status-change');
-
-    });
-    /* Route Setting */
 });
 
 

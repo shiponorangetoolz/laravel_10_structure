@@ -34,19 +34,6 @@
                     "slug": "admin-setting"
                 }
             ]
-        },
-        {
-            "name": "Reports",
-            "icon": "bar-chart",
-            "slug": "",
-            "submenu": [
-                {
-                    "url": "admin/user/reports/projects",
-                    "name": "Project report",
-                    "icon": "circle",
-                    "slug": "admin.project-list-view"
-                }
-            ]
         }
     ]
 }
